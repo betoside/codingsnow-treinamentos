@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to Make Website with Scroll Reveal Effects | Reveal Elements On Scroll - HTML, CSS & Javascript</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    
+    <section class="sec-01">
+        <div class="container">
+            <div class="main-title">Reveal Elements On Scroll</div>
+            <div class="content">
+                <div class="image">
+                    <img src="./images/img1.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde itaque nostrum atque error quo voluptatibus, reiciendis quis dolorum, enim doloremque accusantium nam quod eveniet quibusdam et repellendus! Doloribus, aliquam repudiandae.</p>
+                </div>
+            </div>
+            <div class="media-icons">
+                <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="icon"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sec-02">
+        <div class="container">
+            <h3 class="section-title">Lorem Ipsum</h3>
+            <div class="content">
+                <div class="image">
+                    <img src="./images/img2.jpg" alt="">
+                </div>
+                <div class="info">
+                    <h4 class="info-title">Lorem Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde itaque nostrum atque error quo voluptatibus, reiciendis quis dolorum, enim doloremque accusantium nam quod eveniet quibusdam et repellendus! Doloribus, aliquam repudiandae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="sec-03">
+        <div class="container">
+            <h3 class="section-title">Lorem Ipsum</h3>
+            <div class="content">
+                <ul class="media-info">
+                    <li><a href="#" class="icon"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#" class="icon"><i class="fab fa-linkedin"></i></a></li>
+                </ul>
+                <div class="image">
+                    <img src="./images/img3.jpg" alt="">
+                </div>
+                <div class="text-box">
+                    <h3>Lorem Ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde itaque nostrum atque error quo voluptatibus, reiciendis quis dolorum, enim doloremque accusantium nam quod eveniet quibusdam et repellendus! Doloribus, aliquam repudiandae.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        ScrollReveal({ 
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+         });
+
+        ScrollReveal().reveal('.main-title, .section-title', { delay: 250, origin: 'left' });
+        ScrollReveal().reveal('.sec-01 .image, .info', { delay: 250, origin: 'left' });
+        ScrollReveal().reveal('.text-box', { delay: 350, origin: 'right' });
+        ScrollReveal().reveal('.media-icons i', { delay: 250, origin: 'bottom', interval: 200 });
+        ScrollReveal().reveal('.sec-02 .image', { delay: 250, origin: 'top' });
+        ScrollReveal().reveal('.media-info li:nth-child(1) i', { delay: 150, origin: 'left', interval: 100 });
+        ScrollReveal().reveal('.media-info li:nth-child(2) i', { delay: 250, origin: 'left', interval: 200 });
+        ScrollReveal().reveal('.media-info li:nth-child(3) i', { delay: 350, origin: 'left', interval: 300 });
+        ScrollReveal().reveal('.media-info li:nth-child(4) i', { delay: 450, origin: 'left', interval: 400 });
+        ScrollReveal().reveal('.media-info li:nth-child(5) i', { delay: 550, origin: 'left', interval: 500 });
+    </script>
+
+</body>
+</html>
